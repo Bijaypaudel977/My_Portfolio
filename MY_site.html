@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Site</title>
+    <link rel="stylesheet" href="my_site.css">
+    <script src="https://kit.fontawesome.com/e637f69db4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./logo1.png" alt="logo">
+                <ul id="sidemenu">
+                    <li> <a href="#">Home</a> </li>
+                    <li> <a href="#">About</a> </li>
+                    <li> <a href="#">Services</a> </li>
+                    <li> <a href="#">Portfolio</a></li>
+                    <li> <a href="#">Contact</a></li>
+                    <li> <a href="#">Blog</a> </li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Bijay</span><br>Paudel From Nepal</h1>
+            </div>
+        </div>
+    </div>
+     <!-- about  -->
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./user2.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quas quaerat repudiandae, placeat dolorem repellendus sed. Ad deserunt sapiente eaque beatae odio quasi, doloremque provident a animi. Dolor, modi adipisci libero non iusto reiciendis numquam voluptates repudiandae animi corrupti dicta at veritatis ipsum aspernatur cumque odit debitis perferendis voluptatibus explicabo voluptas provident. Dolore ad fugit, eligendi sit facilis quod inventore, dolor incidunt reiciendis ut quae placeat, natus assumenda hic sed nulla maxime excepturi eveniet at? Aliquam esse assumenda doloremque reprehenderit.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">
+                            Skills
+                        </p>
+                        <p class="tab-links" onclick="opentab('experience')">
+                            Experience
+                        </p>
+                        <p class="tab-links" onclick="opentab('education')">
+                            Education
+                        </p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <Span>UI?UX</Span> <br>Designing Web/APP Interfaces
+                            </li>
+                            <li>
+                                <Span>Web Devvelopment</Span> <br>Web App Development
+                            </li>
+                            <li>
+                                <Span>App Development</Span> <br>Building Android/IOS Apps
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <Span>2023 - Current</Span> <br>UI/UX Design Executive at Coin Digital Ltd
+                            </li>
+                            <li>
+                                <Span>2021 - 2022</Span> <br> Training at Neosphere pvt ltd.
+                            </li>
+                            <li>
+                                <Span>2020 - 2021</Span> <br>Internship at esewa.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <Span>2021- Current</Span> <br>
+                                BIT at Phoenix College fo Management
+                            </li>
+                            <li>
+                                <Span>2019-2021</Span> <br>+2 at Uttar Ganga Secondary School.
+                            </li>
+                            <li>
+                                <Span> - 2019</Span> <br>SEE from Shree Jana Jibraj Secondary School.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------services--------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>WEb Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit vero laborum nobis iusto recusandae consequatur tempore, reiciendis quam minima facilis.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit vero laborum nobis iusto recusandae consequatur tempore, reiciendis quam minima facilis.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit vero laborum nobis iusto recusandae consequatur tempore, reiciendis quam minima facilis.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- ------------------Portfolio--------------- -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./work-1.png">
+                <div class="layer">
+                    <h3>Social Media app</h3>
+                    <p>
+                        The app connects to you to the talented people around the world.Download it from play store.
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./work-2.png">
+                <div class="layer">
+                    <h3>Online Shopping app</h3>
+                    <p>
+                        The app connects to you to the talented people around the world.Download it from play store.
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./work-3.png">
+                <div class="layer">
+                    <h3>Music app</h3>
+                    <p>
+                        The app connects to you to the talented people around the world.Download it from play store.
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- ------------------Contact--------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <a class="fa-solid fa-paper-plane"></a> paudelbijay9844@gmail.com</p>
+                    <p> <a class="fa-solid fa-phone-volume"></a> 9818198060</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/bijaya.paudel.161"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/bijaypaudel473/"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://twitter.com/wiliumkancha"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/bijay-paudel-5a307b26a/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="./my-cv.docx" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Massege" rows="6" placeholder="Your Message"> </textarea>
+                        <button type="submit " class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <P>Copyright © Bijay. Powered by <i class="fa-solid fa-bolt"></i> Bijay Paudel</P>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-100%";
+        }
+    </script>
+    
+</body>
+</html>
